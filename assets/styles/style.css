@@ -1,0 +1,112 @@
+@font-face {
+    font-family: Florishia;
+    src: url(../font/the-florishia.otf);
+}
+
+@font-face {
+    font-family: Jovelle;
+    src: url(../font/JovellePersonalUseOblique-R98yA.otf);
+}
+
+@font-face{
+    font-family: Greenfont;
+    src: url(../font/Greencover.otf);
+}
+
+@font-face{
+    font-family: Glinth;
+    src: url(../font/Glincht.otf);
+}
+@font-face{
+    font-family: Rewon;
+    src: url(../font/Rewon-Slanted.otf);
+}
+
+:root{
+    --blue: #b3d9ff;
+    --whitish-blue: #ebf2ff;
+    --tech-blue: #0f1e2e;
+    --cool-gray: #e6edf3;
+    --mint: #00f5a0;
+    --mint-1: #0ee298;
+}
+
+*{
+    font-family: Florishia!important;
+    color: #fff!important;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+html{scroll-behavior: smooth;}
+
+body{
+    background-color: var(--tech-blue)!important;
+    color: #fff;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+span{font-family: Florishia!important;}
+
+a{font-family: Greenfont!important}
+
+p, button{
+    font-family: Jovelle!important;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+h1, h2, h3{
+    font-family: Florishia!important;
+}
+
+h4, h5, h6{
+    font-family: Greenfont!important;
+    letter-spacing: 2px;
+}
+
+.odd-section{
+    background-color: var(--cool-gray);
+}
+
+.odd-section p, .odd-section h1, .odd-section h2{
+    color: var(--tech-blue)!important;
+}
+
+nav ul li a{
+    border-radius: 5px;
+    letter-spacing: 1.5px;
+    transition: background-color 0.5s ease;
+}
+
+nav ul li a:hover{
+    background-color: var(--mint-1)!important;
+}
+
+/* About Section */
+
+    #about .skills .skillbar{
+        width: 100%;
+        margin: 10px 0;
+    }
+/* About Section End */
+
+@media (max-width: 765px) {
+    #services img{
+        width: 50px!important;
+        height: 50px!important;
+    }
+}
+
+@media (max-width: 450px) {
+    #hero img{transform: translateX(-20%);}
+
+    footer{flex-direction: column;}
+}
+
+@media (max-width: 375px){
+    #hero img{transform: translateX(-28%);}
+
+    footer{flex-direction: column-reverse;}
+}
